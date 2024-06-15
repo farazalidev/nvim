@@ -20,10 +20,28 @@ vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
--- Buffers Navigation
-vim.keymap.set("n", "<leader>bn", ":bNext<CR>", opts)
-vim.keymap.set("n", "<leader>bp", ":bprevious<CR>", opts)
-
+-- Buffers
+-- Move to previous/next
+vim.keymap.set("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
+vim.keymap.set("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
+-- Re-order to previous/next
+vim.keymap.set("n", "<C-<>", "<Cmd>BufferMovePrevious<CR>", opts)
+vim.keymap.set("n", "<C->>", "<Cmd>BufferMoveNext<CR>", opts)
+-- Goto buffer in position...
+vim.keymap.set("n", "<C-1>", "<Cmd>BufferGoto 1<CR>", opts)
+vim.keymap.set("n", "<C-2>", "<Cmd>BufferGoto 2<CR>", opts)
+vim.keymap.set("n", "<C-3>", "<Cmd>BufferGoto 3<CR>", opts)
+vim.keymap.set("n", "<C-4>", "<Cmd>BufferGoto 4<CR>", opts)
+vim.keymap.set("n", "<C-5>", "<Cmd>BufferGoto 5<CR>", opts)
+vim.keymap.set("n", "<C-6>", "<Cmd>BufferGoto 6<CR>", opts)
+vim.keymap.set("n", "<C-7>", "<Cmd>BufferGoto 7<CR>", opts)
+vim.keymap.set("n", "<C-8>", "<Cmd>BufferGoto 8<CR>", opts)
+vim.keymap.set("n", "<C-9>", "<Cmd>BufferGoto 9<CR>", opts)
+vim.keymap.set("n", "<C-0>", "<Cmd>BufferLast<CR>", opts)
+-- Pin/unpin buffer
+vim.keymap.set("n", "<C-p>", "<Cmd>BufferPin<CR>", opts)
+-- Close buffer
+vim.keymap.set("n", "<C-c>", "<Cmd>BufferClose<CR>", opts)
 -- Terminal
 vim.keymap.set("n", "<leader>T", ":ToggleTerm size=20<CR>", opts)
 
@@ -32,5 +50,3 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", opts)
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", opts)
 vim.keymap.set("n", "K", ":m .-2<CR>==")
 vim.keymap.set("n", "J", ":m .+1<CR>==")
-vim.keymap.set("i", "J", ":m .+1<CR>==gi")
-vim.keymap.set("i", "K", ":m .-2<CR>==gi")
