@@ -2,7 +2,7 @@ local config = function()
 
 	require("lualine").setup({
 		options = {
-			theme = "vscode",
+			theme = "onedark",
 			globalstatus = true,
 		},
 		tabline = {

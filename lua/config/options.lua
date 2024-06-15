@@ -1,6 +1,5 @@
 local o = vim.opt
 
-
 -- Tab / indentation
 o.tabstop = 4
 o.shiftwidth = 2

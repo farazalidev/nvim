@@ -2,6 +2,6 @@ return {
 "rebelot/kanagawa.nvim",
   lazy = false,
   config = function()
-    vim.cmd("colorscheme kanagawa-wave")
+    -- vim.cmd("colorscheme kanagawa-wave")
   end
 }
