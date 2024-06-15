@@ -1,5 +1,5 @@
-return { 
-  'echasnovski/mini.nvim', 
-  version = '*' ,
-  lazy = false
+return {
+	"echasnovski/mini.nvim",
+	version = "*",
+	lazy = false,
 }

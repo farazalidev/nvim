@@ -1,4 +1,4 @@
 return {
-'DaikyXendo/nvim-material-icon',
-lazy = false
+	"DaikyXendo/nvim-material-icon",
+	lazy = false,
 }

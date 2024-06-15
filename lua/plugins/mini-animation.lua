@@ -1,5 +1,5 @@
 return {
-  "echasnovski/mini.animate",
-  version = '*' ,
-  lazy = false
+	"echasnovski/mini.animate",
+	version = "*",
+	lazy = false,
 }

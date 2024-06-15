@@ -18,8 +18,8 @@ o.hlsearch = false
 o.relativenumber = true
 o.termguicolors = true
 o.number = true
-o.colorcolumn = '100'
-o.signcolumn = 'yes'
+o.colorcolumn = "100"
+o.signcolumn = "yes"
 o.cmdheight = 1
 o.scrolloff = 10
 o.completeopt = "menuone,noinsert,noselect"
@@ -38,5 +38,5 @@ o.iskeyword:append("-")
 o.mouse:append("a")
 o.swapfile = false
 o.clipboard:append("unnamedplus")
-o.modifiable = true 
+o.modifiable = true
 o.encoding = "UTF-8"
