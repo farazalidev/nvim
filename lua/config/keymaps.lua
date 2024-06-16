@@ -5,6 +5,7 @@ local opts = { noremap = true, silent = true }
 -- Tree
 keymap.set("n", "<leader>t", ":NvimTreeFocus<CR>", opts)
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+keymap.set("n", "<leader>cx", ":NvimTreeCollapse<CR>", opts)
 
 -- Pane Navigation
 
